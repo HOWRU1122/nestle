@@ -1,10 +1,6 @@
 # -*- encoding=utf8 -*-
 # !/usr/local/bin/python3.7
 import os
-import logging
-
-logging.info('111')
-exit()
 
 curpath = os.path.dirname(os.path.realpath("__file__"))
 apath1 = os.path.join(curpath, "/Users/yaokai/PycharmProjects/nestle/雀巢循环/本品监控循环.py")

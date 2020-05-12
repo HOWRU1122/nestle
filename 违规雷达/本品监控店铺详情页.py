@@ -10,7 +10,7 @@ driver.implicitly_wait(20)
 driver.get("http://47.111.14.225:30017/monitorPage/selfMonitor/shop")
 sleep(1)
 #查看详情
-driver.find_element_by_xpath("/html/body/div[2]/div[2]/div[2]/div/div[2]/div[2]/div/div/div[3]/table/tbody/tr[5]/td[8]/div/a").click()
+driver.find_element_by_xpath("/html/body/div[2]/div[2]/div[2]/div/div[2]/div[2]/div/div/div[3]/table/tbody/tr/td[8]/div/a").click()
 sleep(1)
 #时间选择
 driver.find_element_by_xpath("//input[@placeholder='选择周']").click()
@@ -84,11 +84,13 @@ driver.find_element_by_xpath("/html/body/div[2]/div[2]/div[2]/div/div[3]/div/div
 sleep(1)
 
 #查看违规截图
-driver.find_element_by_xpath("/html/body/div[2]/div[2]/div[2]/div/div[3]/div[2]/div/div/div[3]/table/tbody/tr/td[7]/div/a").click()
+driver.find_element_by_xpath("/html/body/div[2]/div[2]/div[2]/div/div[3]/div[2]/div/div/div[3]/table/tbody/tr/td[8]/div/a").click()
 sleep(1)
-driver.find_element_by_xpath("/html/body/div[2]/div[2]/div[2]/div/div[3]/div[3]/div/div[2]/div/div/div/div[3]/table/tbody/tr/td[3]/div/div/a").click()
+driver.find_element_by_xpath("/html/body/div[2]/div[2]/div[2]/div/div[3]/div[3]/div/div[2]/div/div/div/div[3]/table/tbody/tr/td[3]/div/div//a[@class = 'candy-a-link']").click()
 sleep(1)
 driver.switch_to_new_tab()
+driver.close()
 sleep(1)
 driver.switch_to_previous_tab()
 sleep(1)
+

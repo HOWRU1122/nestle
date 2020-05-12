@@ -55,6 +55,27 @@ driver.find_element_by_xpath("/html/body/div[2]/div[2]/div[2]/div/div[3]/div/div
 sleep(1)
 driver.find_element_by_xpath("/html/body/div[5]/div/div/ul/li").click()
 sleep(1)
+#宝贝名称筛选
+driver.find_element_by_xpath("/html/body/div[2]/div[2]/div[2]/div/div[3]/div[2]/div/div/div[2]/table/thead/tr/th/div").click()
+sleep(1)
+driver.find_element_by_xpath("/html/body/div[2]/div[2]/div[2]/div/div[3]/div[2]/div/div/div[2]/table/thead/tr/th/div").click()
+sleep(1)
+driver.find_element_by_xpath("/html/body/div[2]/div[2]/div[2]/div/div[3]/div[2]/div/div/div[2]/table/thead/tr/th/div").click()
+sleep(1)
+#宝贝销量筛选
+driver.find_element_by_xpath("/html/body/div[2]/div[2]/div[2]/div/div[3]/div[2]/div/div/div[2]/table/thead/tr/th[4]/div").click()
+sleep(1)
+driver.find_element_by_xpath("/html/body/div[2]/div[2]/div[2]/div/div[3]/div[2]/div/div/div[2]/table/thead/tr/th[4]/div").click()
+sleep(1)
+driver.find_element_by_xpath("/html/body/div[2]/div[2]/div[2]/div/div[3]/div[2]/div/div/div[2]/table/thead/tr/th[4]/div").click()
+sleep(1)
+#包括库存筛选
+driver.find_element_by_xpath("/html/body/div[2]/div[2]/div[2]/div/div[3]/div[2]/div/div/div[2]/table/thead/tr/th[5]/div").click()
+sleep(1)
+driver.find_element_by_xpath("/html/body/div[2]/div[2]/div[2]/div/div[3]/div[2]/div/div/div[2]/table/thead/tr/th[5]/div").click()
+sleep(1)
+driver.find_element_by_xpath("/html/body/div[2]/div[2]/div[2]/div/div[3]/div[2]/div/div/div[2]/table/thead/tr/th[5]/div").click()
+sleep(1)
 
 #导出
 #driver.find_element_by_xpath("/html/body/div[2]/div[2]/div[2]/div/div[3]/div/div[2]/div/button/span").click()
@@ -67,13 +88,14 @@ driver.find_element_by_xpath("/html/body/div[2]/div[2]/div[2]/div/div[3]/div/div
 sleep(1)
 
 #查看违规截图
-driver.find_element_by_xpath("/html/body/div[2]/div[2]/div[2]/div/div[3]/div[2]/div/div/div[3]/table/tbody/tr/td[5]/div/a").click()
+driver.find_element_by_xpath("/html/body/div[2]/div[2]/div[2]/div/div[3]/div[2]/div/div/div[3]/table/tbody/tr/td[6]/div/a").click()
 sleep(1)
-driver.find_element_by_xpath("/html/body/div[2]/div[2]/div[2]/div/div[3]/div[2]/div[2]/div/div[2]/div/div/div/div[3]/table/tbody/tr/td[2]/div/div/a").click()
+driver.find_element_by_xpath("/html/body/div[2]/div[2]/div[2]/div/div[3]/div[2]/div[2]/div/div[2]/div/div/div/div[3]/table/tbody/tr/td[2]/div/div//a[@class = 'candy-a-link']").click()
+sleep(1)
 driver.switch_to_new_tab()
+driver.close()
 sleep(1)
 driver.switch_to_previous_tab()
 sleep(1)
-
 
 

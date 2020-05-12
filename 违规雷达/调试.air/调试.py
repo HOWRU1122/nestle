@@ -20,10 +20,14 @@ sleep(1)
 #查看违规截图
 driver.find_element_by_xpath("/html/body/div[2]/div[2]/div[2]/div/div[3]/div[2]/div/div/div[3]/table/tbody/tr/td[7]/div/a").click()
 sleep(1)
-driver.find_element_by_xpath("//a[@href='http://itemscreenshot.oss-cn-hangzhou.aliyuncs.com/2020-05%2Fsku_tmall_613095401943_1589259140.png']").click()
+
+driver.find_element_by_xpath("/html/body/div[2]/div[2]/div[2]/div/div[3]/div[3]/div/div[2]/div/div/div/div[3]/table/tbody/tr[2]/td[3]/div/div//a[@class = 'candy-a-link']").click()
+
 sleep(1)
 
 driver.switch_to_new_tab()
 
 driver.switch_to_previous_tab()
+
+
 

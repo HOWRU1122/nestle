@@ -95,6 +95,5 @@ driver.find_element_by_xpath("/html/body/div[2]/div[2]/div[2]/div/div[3]/div[3]/
 sleep(1)
 driver.switch_to_new_tab()
 sleep(1)
-driver.close()
 driver.switch_to_previous_tab()
 sleep(1)

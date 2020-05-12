@@ -4,9 +4,9 @@ import os
 
 
 curpath = os.path.dirname(os.path.realpath("__file__"))
-apath1 = os.path.join(curpath, "/Users/yaokai/PycharmProjects/雀巢/违规雷达/竞品监控首页.py")
-apath2 = os.path.join(curpath, "/Users/yaokai/PycharmProjects/雀巢/违规雷达/竞品监控品牌详情页.py")
-apath3 = os.path.join(curpath, "/Users/yaokai/PycharmProjects/雀巢/违规雷达/竞品监控店铺详情页.py")
+apath1 = os.path.join(curpath, "/Users/yaokai/PycharmProjects/nestle/违规雷达/竞品监控首页.py")
+apath2 = os.path.join(curpath, "/Users/yaokai/PycharmProjects/nestle/违规雷达/竞品监控品牌详情页.py")
+apath3 = os.path.join(curpath, "/Users/yaokai/PycharmProjects/nestle/违规雷达/竞品监控店铺详情页.py")
 
 print(apath1,apath2,apath3)
 l = [apath1,apath2,apath3]

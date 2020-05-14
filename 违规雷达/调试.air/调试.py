@@ -6,28 +6,13 @@ options =webdriver.chrome.options.Options()
 options.add_experimental_option("debuggerAddress","127.0.0.1:9222")
 driver = WebChrome(chrome_options=options)
 driver.implicitly_wait(20)
-#打开网址
-driver.get("http://47.111.14.225:30017/monitorPage/selfMonitor/shop")
+driver.get("http://td2.qingbaomofang.com/dashboard/market")
 sleep(1)
-driver.find_element_by_xpath("/html/body/div[2]/div[2]/div/div/div/div/div/div/dl/dd[2]/a").click()
+driver.find_element_by_xpath("//span[@class='el-dropdown-link el-dropdown-selfdefine']").click()
 sleep(1)
-#查看品牌详情
-driver.find_element_by_xpath("/html/body/div[2]/div[2]/div[2]/div/div[2]/div[2]/div/div/div[3]/table/tbody/tr/td[9]/div/a").click()
+driver.find_element_by_xpath("/html/body/ul/li/div/div/label[4]/span/span[@class='el-checkbox__inner']").click()
 sleep(1)
-#查看店铺详情
-driver.find_element_by_xpath("/html/body/div[2]/div[2]/div[2]/div/div[3]/div[2]/div/div/div[3]/table/tbody/tr/td[8]/div/a").click()
-sleep(1)
-#查看违规截图
-driver.find_element_by_xpath("/html/body/div[2]/div[2]/div[2]/div/div[3]/div[2]/div/div/div[3]/table/tbody/tr/td[7]/div/a").click()
+driver.find_element_by_xpath("/html/body/ul/li/div/div/a[@class='btn']").click()
 sleep(1)
 
-driver.find_element_by_xpath("/html/body/div[2]/div[2]/div[2]/div/div[3]/div[3]/div/div[2]/div/div/div/div[3]/table/tbody/tr[2]/td[3]/div/div//a[@class = 'candy-a-link']").click()
-
-sleep(1)
-
-driver.switch_to_new_tab()
-
-driver.switch_to_previous_tab()
-
-
-
+driver.find_element_by_xpath("/html/body/div/div/div/div/div/div/div/div/div/div/span[@class='el-dropdown-link el-dropdown-selfdefine']").click()
